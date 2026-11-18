@@ -1,0 +1,14 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="popup.css"></head><body>
+<header><div class="brand"><img class="appicon" src="icons/icon48.png" alt=""><div class="title">Address Autofill</div></div><button id="theme" class="theme" title="Light / dark"></button></header>
+<div class="picker">
+ <button id="current" class="current"><img id="curFlag"><span id="curName"></span><span class="chev">&#8964;</span></button>
+ <div id="panel" class="panel hidden"><input id="search" placeholder="Search country or code" autocomplete="off"><ul id="list"></ul></div>
+</div>
+<div class="vrow"><span class="vlabel">Address</span><div id="variants" class="variants"></div>
+ <label class="rot"><input type="checkbox" id="rotate"> Rotate</label></div>
+<div id="fields" class="fields"></div>
+<button id="fill" class="primary">Fill form</button>
+<div class="row"><button id="reset" class="ghost">Reset</button><button id="scan" class="ghost">Debug</button></div>
+<div class="hint">Shortcut: <b id="kbd">not set</b> · <a href="#" id="setkey">change</a></div>
+<div id="msg" class="msg"></div>
+<script src="flags.js"></script><script src="countries.js"></script><script src="popup.js"></script></body></html>
